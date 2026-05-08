@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubrí los mejores restaurantes de Pérez Zeledón. Menús, horarios, teléfonos y más en un solo lugar."
+    />
+    <meta property="og:title" content="Guía de Restaurantes · Pérez Zeledón" />
+    <meta
+      property="og:description"
+      content="El catálogo completo de restaurantes de la región. Encontrá tu próxima experiencia gastronómica."
+    />
+    <meta property="og:type" content="website" />
+    <title>Guía de Restaurantes · Pérez Zeledón</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- ── Navigation ──────────────────────────────────────── -->
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+      <div class="container navbar__inner">
+        <a
+          class="navbar__brand"
+          href="index.html"
+          aria-label="Inicio — Guía de Restaurantes"
+        >
+          <div class="navbar__logo-icon" aria-hidden="true">🍽️</div>
+          <span class="navbar__brand-name"> Guía<span>PZ</span> </span>
+        </a>
+        <div class="navbar__actions">
+          <a class="btn-nav" href="#catalogSection">Explorar</a>
+          <a class="btn-nav btn-nav--gold" href="#catalogSection"
+            >Ver restaurantes</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── Hero ──────────────────────────────────────────── -->
+    <header class="hero" role="banner">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__grid-lines" aria-hidden="true"></div>
+      <div class="orb orb--gold" aria-hidden="true"></div>
+      <div class="orb orb--gold-2" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Pérez Zeledón · Costa Rica</p>
+
+        <h1 class="hero__title">
+          Tu guía gastronómica
+          <span class="line-accent">de la zona</span>
+        </h1>
+
+        <p class="hero__subtitle">
+          Descubrí los mejores restaurantes, cafés y sodas de Pérez Zeledón.
+          Menús, horarios, contacto y más — todo en un solo lugar.
+        </p>
+
+        <!-- Search Bar -->
+        <div class="hero__search" role="search">
+          <span class="hero__search-icon" aria-hidden="true">🔍</span>
+          <label for="searchInput" class="sr-only">Buscar restaurante</label>
+          <input
+            type="search"
+            id="searchInput"
+            name="search"
+            placeholder="Buscar pizzería, soda, café..."
+            autocomplete="off"
+            aria-label="Buscar restaurante por nombre o tipo"
+          />
+          <button class="hero__search-btn" id="searchBtn" aria-label="Buscar">
+            Buscar
+          </button>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero__stats" aria-label="Estadísticas">
+          <div class="hero__stat">
+            <span class="hero__stat-value" id="statTotal">0</span>
+            <span class="hero__stat-label">Restaurantes</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-value">3+</span>
+            <span class="hero__stat-label">Categorías</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-value">📲</span>
+            <span class="hero__stat-label">Pedidos WhatsApp</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── Main Content ───────────────────────────────────── -->
+    <main id="main-content" role="main">
+      <!-- Filters Section -->
+      <section
+        class="filters-section"
+        aria-label="Filtros de categoría"
+        id="catalogSection"
+      >
+        <div class="container">
+          <div class="filters__header">
+            <p class="filters__title">Filtrar por categoría</p>
+            <p class="filters__count">
+              Mostrando <span id="resultCount">0</span> restaurantes
+            </p>
+          </div>
+          <div
+            class="filters__chips"
+            id="filterChips"
+            role="group"
+            aria-label="Categorías de restaurantes"
+          >
+            <!-- Populated by catalog.js -->
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- Featured Banner -->
+      <section class="container" aria-label="Información destacada">
+        <div class="featured-banner">
+          <div class="featured-banner__icon" aria-hidden="true">💬</div>
+          <div class="featured-banner__text">
+            <strong>Pedidos por WhatsApp</strong>
+            <p>
+              Cada restaurante tiene botón directo de WhatsApp y llamada. ¡Pedí
+              desde aquí mismo!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Catalog Grid -->
+      <section class="catalog-section" aria-label="Catálogo de restaurantes">
+        <div class="container">
+          <div
+            class="catalog-grid"
+            id="catalogGrid"
+            role="list"
+            aria-label="Lista de restaurantes"
+          >
+            <!-- Populated by catalog.js -->
+          </div>
+          <div
+            class="no-results"
+            id="noResults"
+            role="status"
+            aria-live="polite"
+          >
+            <div class="no-results__icon" aria-hidden="true">🔍</div>
+            <p class="no-results__title">Sin resultados</p>
+            <p>Intentá con otra búsqueda o categoría.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── Footer ─────────────────────────────────────────── -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p class="site-footer__logo">GuíaPZ</p>
+        <p class="site-footer__tagline">
+          El directorio gastronómico de Pérez Zeledón
+        </p>
+        <nav class="site-footer__links" aria-label="Enlaces del pie de página">
+          <a href="index.html">Inicio</a>
+          <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+        <p class="site-footer__copy">
+          © <span id="footerYear"></span> Guía de Restaurantes Pérez Zeledón ·
+          Hecho con ❤️ en Costa Rica
+        </p>
+      </div>
+    </footer>
+
+    <!-- ── Scripts ────────────────────────────────────────── -->
+    <script src="data/restaurants.js"></script>
+    <script src="js/catalog.js"></script>
+    <script>
+      // Set current year in footer
+      document.getElementById("footerYear").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

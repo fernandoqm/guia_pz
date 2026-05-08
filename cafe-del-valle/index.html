@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <!-- set by restaurant.js -->
+    <meta property="og:type" content="website" />
+    <title>Café del Valle | Guía de Restaurantes PZ</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>"
+    />
+    <link rel="stylesheet" href="../css/restaurant.css" />
+
+    <script>
+      window.PAGE_DATA = { restaurantId: "cafe-del-valle" };
+    </script>
+  </head>
+  <body>
+    <a
+      href="../index.html"
+      class="back-btn"
+      aria-label="Ir a la página principal"
+    >
+      <span aria-hidden="true">🏠</span>
+    </a>
+
+    <header class="restaurant-cover" role="banner">
+      <div id="coverBg"></div>
+      <div class="restaurant-cover__overlay" aria-hidden="true"></div>
+      <div class="restaurant-cover__content">
+        <span class="restaurant-cover__category" id="coverCategory"></span>
+        <h1 class="restaurant-cover__name" id="coverName"></h1>
+        <p class="restaurant-cover__tagline" id="coverTagline"></p>
+      </div>
+    </header>
+
+    <div
+      class="info-strip"
+      role="complementary"
+      aria-label="Información del restaurante"
+    >
+      <div class="container">
+        <div class="info-strip__rating info-strip__item" id="infoRating"></div>
+        <div class="info-strip__item" id="infoAddress"></div>
+        <div class="info-strip__item" id="infoSchedule"></div>
+      </div>
+    </div>
+
+    <main class="container" id="main-content" role="main">
+      <div
+        class="action-btns-desktop"
+        id="desktopActions"
+        aria-label="Acciones de contacto"
+      ></div>
+
+      <section class="menu-section" aria-label="Menú del restaurante">
+        <div class="menu-section__header">
+          <div class="section-label">
+            <span class="section-label__line" aria-hidden="true"></span>
+            <span class="section-label__text">Menú</span>
+          </div>
+          <h2 class="menu-section__title">Nuestro Menú</h2>
+        </div>
+        <div id="menuContainer"></div>
+        <div class="menu-note" role="note">
+          <span aria-hidden="true">ℹ️</span>
+          <span
+            >Los precios pueden variar. Consultá disponibilidad y promociones
+            directamente al restaurante.</span
+          >
+        </div>
+      </section>
+    </main>
+
+    <div class="fab-bar" role="complementary" aria-label="Contacto rápido">
+      <a
+        class="fab-btn fab-btn--call"
+        id="fabCall"
+        aria-label="Llamar al restaurante"
+        >📞 Llamar</a
+      >
+      <a
+        class="fab-btn fab-btn--whatsapp"
+        id="fabWhatsApp"
+        target="_blank"
+        rel="noopener"
+        aria-label="Contactar por WhatsApp"
+        >💬 WhatsApp</a
+      >
+    </div>
+
+    <script src="../data/restaurants.js"></script>
+    <script src="../js/restaurant.js"></script>
+  </body>
+</html>
