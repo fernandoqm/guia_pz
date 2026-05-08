@@ -146,8 +146,8 @@ function buildRestaurantCard(restaurant, index) {
       role="button"
       tabindex="0"
       aria-label="Ver restaurante ${name}"
-      onclick="navigateTo('${id}/index.html')"
-      onkeydown="if(event.key==='Enter'){navigateTo('${id}/index.html')}"
+      onclick="navigateTo('./${id}/')"
+      onkeydown="if(event.key==='Enter'){navigateTo('./${id}/')}"
       style="animation-delay:${delay}s"
     >
       <div class="restaurant-card__image-wrap">

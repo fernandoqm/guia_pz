@@ -55,8 +55,8 @@ const RESTAURANTS = [
     schedule: "Lunes–Domingo: 11:00 AM – 10:00 PM",
     description:
       "La pizzería más querida de Pérez Zeledón. Masa artesanal, ingredientes frescos y el auténtico sabor italiano que nos ha acompañado por casi 30 años.",
-    coverImage: "../../assets/covers/gustavos-cover.jpg",
-    logoImage: "../../assets/logos/gustavos-logo.png",
+    coverImage: "../assets/covers/gustavos-cover.jpg",
+    logoImage: "../assets/logos/gustavos-logo.png",
     accentColor: "#E8553E",
     menu: [
       {
@@ -154,8 +154,8 @@ const RESTAURANTS = [
     schedule: "Lunes–Sábado: 7:00 AM – 7:00 PM  |  Domingo: 8:00 AM – 2:00 PM",
     description:
       "El rincón perfecto para comenzar el día. Café de especialidad costarricense, tostado local, combinado con repostería artesanal hecha cada mañana.",
-    coverImage: "../../assets/covers/cafe-cover.jpg",
-    logoImage: "../../assets/logos/cafe-logo.png",
+    coverImage: "../assets/covers/cafe-cover.jpg",
+    logoImage: "../assets/logos/cafe-logo.png",
     accentColor: "#8B5E3C",
     menu: [
       {
@@ -254,8 +254,8 @@ const RESTAURANTS = [
     schedule: "Lunes–Viernes: 6:00 AM – 3:00 PM  |  Sábado: 6:00 AM – 1:00 PM",
     description:
       "La soda de toda la vida, donde la abuela manda. Recetas heredadas, sabores auténticos y el amor de la cocina costarricense en cada plato.",
-    coverImage: "../../assets/covers/soda-cover.jpg",
-    logoImage: "../../assets/logos/soda-logo.png",
+    coverImage: "../assets/covers/soda-cover.jpg",
+    logoImage: "../assets/logos/soda-logo.png",
     accentColor: "#4A9EFF",
     menu: [
       {
@@ -341,7 +341,7 @@ const RESTAURANTS = [
     mapsUrl: "https://maps.google.com/?q=Perez+Zeledon+Costa+Rica",
     schedule: "Lunes–Sábado: 9:00 AM – 6:00 PM  |  Domingo: Cerrado",
     description: "Una hermosa tienda con productos hechos por artesanos locales. Lleve consigo un pedazo de nuestra tierra, desde café de especialidad hasta artesanías hechas a mano.",
-    coverImage: "../../assets/covers/arte-tico-cover.png", 
+    coverImage: "../assets/covers/arte-tico-cover.png", 
     logoImage: "",
     accentColor: "#a065db",
     menu: [
