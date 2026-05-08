@@ -91,7 +91,22 @@
       >
     </div>
 
+    <!-- Main Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p class="site-footer__copy">
+          © <span id="footerYear"></span> Fernando Quirós M. Todos los derechos
+          reservados.<br />
+          Diseñado y desarrollado por <strong>Fernando Quirós M.</strong>
+        </p>
+      </div>
+    </footer>
+
     <script src="../data/restaurants.js"></script>
     <script src="../js/restaurant.js"></script>
+    <script>
+      const yearSpan = document.getElementById("footerYear");
+      if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
